@@ -23,9 +23,11 @@ function Script:EnableUpdate(enabled) end
 
 ---Gets the value of a Script Variable defined in the script's mapping by name.
 ---- Returns nil if a Script Variable with the specified name does not exist.
----@generic T : ServerDataType
+---
+---**See:**
+---- [ServerDataType](https://haminpants.github.io/miliastra-lua-api/alias/ServerDataType.html) for all data types that can be returned.
 ---@param varName string # The name of the Script Variable.
----@return T? value # The value of the Script Variable.
+---@return any value # The value of the Script Variable.
 function Script:GetParam(varName) end
 
 ---Calls a global function by name.
@@ -68,9 +70,12 @@ function Script:RegisterCustomVariableChangedHandler(entity, varName, callback) 
 ---    local myVec3List = signalParams[3] -- Now typed as a 3D Vector list
 ---end)
 ---```
----@generic T : ServerDataType[]
+---
+---**See:**
+---- [ServerDataType](https://haminpants.github.io/miliastra-lua-api/alias/ServerDataType.html) for all data types that can be returned in the signalParams table.
+---@generic T : table
 ---@param signalName `T` # The name of the signal to register a handler for.
----@param callback fun(signalName: string, signalParams: T|GenericServerSignal) # The callback to execute whenever the signal is received.
+---@param callback fun(signalName: string, signalParams: T|table) # The callback to execute whenever the signal is received.
 function Script:RegisterServerSignalHandler(signalName, callback) end
 
 ---Removes the handler for the specified Custom Variable.

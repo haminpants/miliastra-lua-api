@@ -72,7 +72,7 @@ function ServerSignal:AddIntList(values) end
 ---- Behavior for unexpected type values are documented in the add function for the corresponding type.
 ---
 ---**See:**
----- [Enum.ParamType](https://haminpants.github.io/miliastra-lua-api/class/Enum.ParamType.html) for all valid parameter types.
+---- [Enum.ParamType](https://haminpants.github.io/miliastra-lua-api/class/Enum.ParamType.html) for all parameter types.
 ---@param type EnumItem.ParamType # The type that the parameter should be interpreted as.
 ---@param value ServerDataType # The value that should be sent for the added parameter.
 function ServerSignal:AddParam(type, value) end
