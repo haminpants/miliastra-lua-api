@@ -152,11 +152,11 @@ function game.StopAudio(audioInstanceId) end
 
 ---Creates a Tween instance targeting the given object.
 ---- Once created, the target values can no longer be changed.
----@param object ClientControlType # The object to modify the fields of.
+---@param control ClientControlType # The Client Control to modify the fields of.
 ---@param targetValues TweenTarget # A table containing the target values of fields to modify during the Tween. A warning will be raised if a field in the table is not tweenable.
 ---@param duration number # The duration of the Tween in seconds.
 ---@return Tween tween # The created Tween instance.
-function game.Tween(object, targetValues, duration) end
+function game.Tween(control, targetValues, duration) end
 
 ---Creates a new Tween Sequence.
 ---@return TweenSequence tweenSequence # The created Tween Sequence.
