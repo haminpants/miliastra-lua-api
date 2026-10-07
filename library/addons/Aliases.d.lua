@@ -1,8 +1,8 @@
 ---@meta
 
----Encapsulates the runtime type name of types accessible through the Miliastra Wonderland Lua Scripting API.
+---Encapsulates the runtime type name of types accessible through the Miliastra Wonderland Lua API.
 ---
----*Aliases are not a feature of the Miliastra Wonderland Lua Scripting API; they are defined to aid development.*
+---*Aliases are not a feature of the Miliastra Wonderland Lua API; they are defined to aid development.*
 ---@alias ApiType
 ---|"nil"
 ---|"boolean"
@@ -31,7 +31,7 @@
 
 ---Encapsulates all Client Control types that are returned by functions and fields that reference Client Controls.
 ---
----*Aliases are not a feature of the Miliastra Wonderland Lua Scripting API; they are defined to aid development.*
+---*Aliases are not a feature of the Miliastra Wonderland Lua API; they are defined to aid development.*
 ---@alias ClientControlType
 ---|ClientUIAnimationControl
 ---|ClientUIContainerControl
@@ -47,7 +47,7 @@
 
 ---Encapsulates the data types that are returned by the server.
 ---
----*Aliases are not a feature of the Miliastra Wonderland Lua Scripting API; they are defined to aid development.*
+---*Aliases are not a feature of the Miliastra Wonderland Lua API; they are defined to aid development.*
 ---@alias ServerDataType
 ---|boolean
 ---|number
@@ -64,12 +64,12 @@
 ---
 ---For example, -0.67 represents -67%, and 1.5 represents 150%.
 ---
----*Aliases are not a feature of the Miliastra Wonderland Lua Scripting API; they are defined to aid development.*
+---*Aliases are not a feature of the Miliastra Wonderland Lua API; they are defined to aid development.*
 ---@alias DecimalPercentage number
 
 ---Expects a number between 0.0 and 1.0 (inclusive) that represents a percentage in decimal form.
 ---
 ---For example, 0.25 represents 25%, and 1 represents 100%.
 ---
----*Aliases are not a feature of the Miliastra Wonderland Lua Scripting API; they are defined to aid development.*
+---*Aliases are not a feature of the Miliastra Wonderland Lua API; they are defined to aid development.*
 ---@alias NormalizedPercentage number
