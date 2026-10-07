@@ -2,7 +2,7 @@
 
 ---A type that encapsulates all tweenable fields. See the corresponding field on the original type for documentation.
 ---
----*This type is not native to the Miliastra Wonderland Lua Scripting API; it has been added to aid development.*
+---*This type is not native to the Miliastra Wonderland Lua API; it has been added to aid development.*
 ---@class TweenTarget
 ---@field anchoredPositionX number? # Tweenable on all Client Controls.
 ---@field anchoredPositionY number? # Tweenable on all Client Controls.

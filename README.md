@@ -1,5 +1,5 @@
-# Miliastra Wonderland Lua Scripting API Definitions
-Complete documentation of all types, fields, functions, globals, and enums provided by the Miliastra Wonderland Lua Scripting API.
+# Miliastra Wonderland Lua API Definitions
+Complete documentation of all types, fields, functions, globals, and enums provided by the Miliastra Wonderland Lua API.
 
 ### Available as a [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=haminpants.mililua-api-definitions)
 
