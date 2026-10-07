@@ -7,6 +7,6 @@ Complete documentation of all types, fields, functions, globals, and enums provi
 
 ## Notes
 - Annotated using LuaCATS for LuaLS.
-- Contains additional aliases and classes to provided additional typing support in `library/addons`.
+- Contains additional aliases and classes to provide additional typing support in `library/addons`.
 - Contains extended documentation verified through testing.
 - Documentation generated using a custom [emmylua_doc_cli](https://github.com/haminpants/emmylua-analyzer-rust) build.
