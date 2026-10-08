@@ -102,7 +102,7 @@ function game.GetUICanvasSize() end
 ---- The created Client Control is appended to the parent's list of children, assigning it the next largest sibling index.
 ---
 ---**See:**
----- [ClientUIBaseControl.SetSiblingIndex](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.SetSiblingIndex) for detailed sibling-index behavior.
+---- [ClientUIBaseControl.GetSiblingIndex](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetSiblingIndex) for detailed sibling-index behavior.
 ---@param templateIndex number # The index of the Client Control Template to create.
 ---@param parent ClientControlType # The Client Control which will be the parent of the created Client Control.
 ---@return ClientControlType # The created Client Control instance.

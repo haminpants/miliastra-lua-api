@@ -12,8 +12,8 @@
 ---@field visible boolean # [Read] Whether the Client Control is visible.
 ---@field name string # [Read/Write] The name of the Client Control.
 ---@field parent ClientControlType? # [Read/Write] The parent of the Client Control. Always nil for root-level ControlContainers.
----@field anchoredPositionX number # [Read/Write/Tweenable] The x position of the Client Control's pivot point relative to its anchor point. See [ClientUIBaseControl.GetAnchoredPosition](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.GetAnchoredPosition) for detailed behavior.
----@field anchoredPositionY number # [Read/Write/Tweenable] The y position of the Client Control's pivot point relative to its anchor point. See [ClientUIBaseControl.GetAnchoredPosition](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.GetAnchoredPosition) for detailed behavior.
+---@field anchoredPositionX number # [Read/Write/Tweenable] The x position of the Client Control's pivot point relative to its anchor point. See [ClientUIBaseControl.GetAnchoredPosition](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetAnchoredPosition) for detailed behavior.
+---@field anchoredPositionY number # [Read/Write/Tweenable] The y position of the Client Control's pivot point relative to its anchor point. See [ClientUIBaseControl.GetAnchoredPosition](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetAnchoredPosition) for detailed behavior.
 ---@field sizeDeltaX number # [Read/Write/Tweenable] The size offset between the width of the Client Control and its x-axis anchor bounds.
 ---@field sizeDeltaY number # [Read/Write/Tweenable] The size offset between the height of the Client Control and its y-axis anchor bounds.
 ---@field anchorMinX NormalizedPercentage # [Read/Write/Tweenable] The minimum x anchor represented as a normalized percentage of the parent's width originating from the bottom-left corner of the parent's bounding box.
@@ -203,7 +203,7 @@ function ClientUIBaseControl:SetAnchorMin(x, y) end
 ---- If anchorMin equals to anchorMax on a given axis, the anchor point for that axis resolves to anchorMin.
 ---
 ---**See:**
----- [ClientUIBaseControl.GetAnchoredPosition](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.GetAnchoredPosition) for detailed anchor point behavior.
+---- [ClientUIBaseControl.GetAnchoredPosition](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetAnchoredPosition) for detailed anchor point behavior.
 ---@param x number # The x position of the pivot point relative to the anchor point.
 ---@param y number # The y position of the pivot point relative to the anchor point.
 function ClientUIBaseControl:SetAnchoredPosition(x, y) end
@@ -213,7 +213,7 @@ function ClientUIBaseControl:SetAnchoredPosition(x, y) end
 ---- Returns false only when called on a root-level ContainerControl.
 ---
 ---**See:**
----- [ClientUIBaseControl.GetSiblingIndex](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.GetSiblingIndex) for detailed sibling-index behavior.
+---- [ClientUIBaseControl.GetSiblingIndex](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetSiblingIndex) for detailed sibling-index behavior.
 ---@return boolean unknown # Always true?
 function ClientUIBaseControl:SetAsFirstSibling() end
 
@@ -222,7 +222,7 @@ function ClientUIBaseControl:SetAsFirstSibling() end
 ---- Returns false only when called on a root-level ContainerControl.
 ---
 ---**See:**
----- [ClientUIBaseControl.GetSiblingIndex](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.GetSiblingIndex) for detailed sibling-index behavior.
+---- [ClientUIBaseControl.GetSiblingIndex](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetSiblingIndex) for detailed sibling-index behavior.
 ---@return boolean unknown # Always true?
 function ClientUIBaseControl:SetAsLastSibling() end
 
