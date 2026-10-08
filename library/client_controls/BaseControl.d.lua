@@ -259,7 +259,7 @@ function ClientUIBaseControl:SetPivot(x, y) end
 ---- Returns false only when called on a root-level ContainerControl.
 ---
 ---**See:**
----- [ClientUIBaseControl.GetSiblingIndex](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.GetSiblingIndex) for detailed sibling-index behavior.
+---- [ClientUIBaseControl.GetSiblingIndex](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetSiblingIndex) for detailed sibling-index behavior.
 ---@param index integer # The 0-indexed position in the parent's list of children. Automatically clamped within the valid range of indexes.
 ---@return boolean success # Whether the sibling index was changed.
 function ClientUIBaseControl:SetSiblingIndex(index) end
