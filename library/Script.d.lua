@@ -43,8 +43,8 @@ function Script:Invoke(funcName, ...) end
 ---Registers a Custom Variable changed handler for the specified variable name and entity.
 ---- The variable must be set in the Custom Variable component of the entity.
 ---- The callback function does not provide pre-change or post-change values.
----- Multiple handlers for the same Custom Variable cannot be registered on the same script; only the earliest handler will take effect.
 ---- Callback functions will be called even if "Trigger Event" is false.
+---- Multiple handlers for the same Custom Variable cannot be registered on the same script; only the earliest handler will take effect.
 ---
 ---### Data Type Callback Behavior
 ---Lists will call the callback function when:
