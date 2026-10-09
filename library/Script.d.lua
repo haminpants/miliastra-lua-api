@@ -41,8 +41,30 @@ function Script:GetParam(varName) end
 function Script:Invoke(funcName, ...) end
 
 ---Registers a Custom Variable changed handler for the specified variable name and entity.
----- Multiple handlers for the same Custom Variable cannot be registered on the same script; only the earliest handler will take effect.
+---- The variable must be set in the Custom Variable component of the entity.
 ---- The callback function does not provide pre-change or post-change values.
+---- Multiple handlers for the same Custom Variable cannot be registered on the same script; only the earliest handler will take effect.
+---- Callback functions will be called even if "Trigger Event" is false.
+---
+---### Data Type Callback Behavior
+---Lists will call the callback function when:
+---- A list value is inserted.
+---- A list value is set.
+---- An exisiting list value is removed.
+---- The list is cleared, even if already empty.
+---- The list is concatenated.
+---- The list is sorted.
+---
+---Dictionaries will call the callback function when:
+---- A key-value pair is set or changed.
+---- An exisiting key is removed.
+---- The dictionary is cleared, even if already empty.
+---
+---Structures will call the callback function when:
+---- Any action that triggers a change event in lists, dictionaries, or nested structures occurs.
+---- The structure is modified.
+---
+---Structure behaviors apply to Structure Lists and Structure Dictionaries.
 ---
 ---**See:**
 ---- [Enum.CustomVariableEntityType](https://haminpants.github.io/miliastra-lua-api/class/Enum.CustomVariableEntityType.html) for all entities that Custom Variables changes can be handled on.

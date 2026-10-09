@@ -61,8 +61,8 @@ function game.GetCursorUIPos() end
 ---@return EnumItem.Device device # The current device type.
 function game.GetDevice() end
 
----Gets a declared Custom Variable from the specified entity.
----- Returns nil if a Custom Variable with the provided name is not declared on the entity.
+---Gets a variable set in the Custom Variable component of the specified entity.
+---- Returns nil if a variable with the specified name is not set in the Custom Variable component on the entity.
 ---
 ---**See:**
 ---- [Enum.CustomVariableEntityType](https://haminpants.github.io/miliastra-lua-api/class/Enum.CustomVariableEntityType.html) for all entities that Custom Variables can be retrieved from.
