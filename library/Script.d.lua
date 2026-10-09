@@ -47,20 +47,22 @@ function Script:Invoke(funcName, ...) end
 ---- Callback functions will be called even if "Trigger Event" is false.
 ---
 ---### Data Type Callback Behavior
----- Lists will also call the callback function when:
----  - A list value is inserted.
----  - A list value is set.
----  - An exisiting list value is removed.
----  - The list is cleared, even if already empty.
----  - The list is concatenated.
----  - The list is sorted.
----- Dictionaries will also call the callback function when:
----  - A key-value pair is set or changed.
----  - An exisiting key is removed.
----  - The dictionary is cleared, even if already empty.
----- Structures will also call the callback function when:
----  - Any action that triggers a change event in lists, dictionaries, or nested structures occurs.
----  - The structure is modified.
+---Lists will call the callback function when:
+---- A list value is inserted.
+---- A list value is set.
+---- An exisiting list value is removed.
+---- The list is cleared, even if already empty.
+---- The list is concatenated.
+---- The list is sorted.
+---
+---Dictionaries will call the callback function when:
+---- A key-value pair is set or changed.
+---- An exisiting key is removed.
+---- The dictionary is cleared, even if already empty.
+---
+---Structures will call the callback function when:
+---- Any action that triggers a change event in lists, dictionaries, or nested structures occurs.
+---- The structure is modified.
 ---
 ---Structure behaviors apply to Structure Lists and Structure Dictionaries.
 ---
