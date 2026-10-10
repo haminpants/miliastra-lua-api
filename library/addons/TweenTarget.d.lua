@@ -7,82 +7,82 @@
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.anchoredPositionX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchoredPositionX).
+---- [ClientUIBaseControl.anchoredPositionX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchoredPositionX)
 ---@field anchoredPositionX number?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.anchoredPositionY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchoredPositionY).
+---- [ClientUIBaseControl.anchoredPositionY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchoredPositionY)
 ---@field anchoredPositionY number?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.sizeDeltaX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.sizeDeltaX).
+---- [ClientUIBaseControl.sizeDeltaX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.sizeDeltaX)
 ---@field sizeDeltaX number?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.sizeDeltaY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.sizeDeltaY).
+---- [ClientUIBaseControl.sizeDeltaY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.sizeDeltaY)
 ---@field sizeDeltaY number?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.anchorMinX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMinX).
+---- [ClientUIBaseControl.anchorMinX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMinX)
 ---@field anchorMinX NormalizedPercentage?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.anchorMinY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMinY).
+---- [ClientUIBaseControl.anchorMinY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMinY)
 ---@field anchorMinY NormalizedPercentage?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.anchorMaxX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMaxX).
+---- [ClientUIBaseControl.anchorMaxX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMaxX)
 ---@field anchorMaxX NormalizedPercentage?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.anchorMaxY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMaxY).
+---- [ClientUIBaseControl.anchorMaxY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMaxY)
 ---@field anchorMaxY NormalizedPercentage?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.pivotX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.pivotX).
+---- [ClientUIBaseControl.pivotX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.pivotX)
 ---@field pivotX DecimalPercentage?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.pivotY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.pivotY).
+---- [ClientUIBaseControl.pivotY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.pivotY)
 ---@field pivotY DecimalPercentage?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.localScaleX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localScaleX).
+---- [ClientUIBaseControl.localScaleX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localScaleX)
 ---@field localScaleX number?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.localScaleY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localScaleY).
+---- [ClientUIBaseControl.localScaleY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localScaleY)
 ---@field localScaleY number?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.localScaleZ](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localScaleZ).
+---- [ClientUIBaseControl.localScaleZ](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localScaleZ)
 ---@field localScaleZ number?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.localRotationX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localRotationX).
+---- [ClientUIBaseControl.localRotationX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localRotationX)
 ---@field localRotationX number?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.localRotationY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localRotationY).
+---- [ClientUIBaseControl.localRotationY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localRotationY)
 ---@field localRotationY number?
 ---Tweenable on all Client Controls.
 ---
 ---**See:**
----- [ClientUIBaseControl.localRotationZ](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localRotationZ).
+---- [ClientUIBaseControl.localRotationZ](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localRotationZ)
 ---@field localRotationZ number?
 ---Only tweenable on Image Controls.
 ---- Will not apply in relative Tweens.
