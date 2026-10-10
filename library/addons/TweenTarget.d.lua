@@ -4,31 +4,147 @@
 ---
 ---*This type is not native to the Miliastra Wonderland Lua API; it has been added to aid development.*
 ---@class TweenTarget
----@field anchoredPositionX number? # Tweenable on all Client Controls.
----@field anchoredPositionY number? # Tweenable on all Client Controls.
----@field sizeDeltaX number? # Tweenable on all Client Controls.
----@field sizeDeltaY number? # Tweenable on all Client Controls.
----@field anchorMinX NormalizedPercentage? # Tweenable on all Client Controls.
----@field anchorMinY NormalizedPercentage? # Tweenable on all Client Controls.
----@field anchorMaxX NormalizedPercentage? # Tweenable on all Client Controls.
----@field anchorMaxY NormalizedPercentage? # Tweenable on all Client Controls.
----@field pivotX DecimalPercentage? # Tweenable on all Client Controls.
----@field pivotY DecimalPercentage? # Tweenable on all Client Controls.
----@field localScaleX number? # Tweenable on all Client Controls.
----@field localScaleY number? # Tweenable on all Client Controls.
----@field localScaleZ number? # Tweenable on all Client Controls.
----@field localRotationX number? # Tweenable on all Client Controls.
----@field localRotationY number? # Tweenable on all Client Controls.
----@field localRotationZ number? # Tweenable on all Client Controls.
----@field imageColor ColorValue? # Only tweenable on Image Controls. Will not apply in relative Tweens.
----@field softEdgeWidthX number? # Only tweenable on Image Controls.
----@field softEdgeWidthY number? # Only tweenable on Image Controls.
----@field horizontalSoftRange number? # Only tweenable on Image Controls.
----@field verticalSoftRange number? # Only tweenable on Image Controls.
----@field fillAmount NormalizedPercentage?  # Only tweenable on Image Controls.
----@field fontSize integer? # Only tweenable on Text Box Controls and Text Window Controls.
----@field fontColor ColorValue? # Only tweenable on Text Box Controls and Text Window Controls. Will not apply in relative Tweens.
----@field bgColor ColorValue? # Only tweenable on Text Box Controls and Text Window Controls. Will not apply in relative Tweens.
----@field outlineColor ColorValue? # Only tweenable on Text Box Controls and Text Window Controls. Will not apply in relative Tweens.
----@field minimumFontSize integer? # Only tweenable on Text Box Controls and Text Window Controls.
----@field scrollProgress NormalizedPercentage? # Only tweenable on Grid Scroller Controls.
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.anchoredPositionX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchoredPositionX).
+---@field anchoredPositionX number?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.anchoredPositionY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchoredPositionY).
+---@field anchoredPositionY number?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.sizeDeltaX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.sizeDeltaX).
+---@field sizeDeltaX number?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.sizeDeltaY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.sizeDeltaY).
+---@field sizeDeltaY number?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.anchorMinX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMinX).
+---@field anchorMinX NormalizedPercentage?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.anchorMinY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMinY).
+---@field anchorMinY NormalizedPercentage?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.anchorMaxX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMaxX).
+---@field anchorMaxX NormalizedPercentage?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.anchorMaxY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.anchorMaxY).
+---@field anchorMaxY NormalizedPercentage?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.pivotX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.pivotX).
+---@field pivotX DecimalPercentage?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.pivotY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.pivotY).
+---@field pivotY DecimalPercentage?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.localScaleX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localScaleX).
+---@field localScaleX number?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.localScaleY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localScaleY).
+---@field localScaleY number?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.localScaleZ](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localScaleZ).
+---@field localScaleZ number?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.localRotationX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localRotationX).
+---@field localRotationX number?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.localRotationY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localRotationY).
+---@field localRotationY number?
+---Tweenable on all Client Controls.
+---
+---**See:**
+---- [ClientUIBaseControl.localRotationZ](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.localRotationZ).
+---@field localRotationZ number?
+---Only tweenable on Image Controls.
+---- Will not apply in relative Tweens.
+---
+---**See:**
+---- [ClientUIImageControl.imageColor](https://haminpants.github.io/miliastra-lua-api/class/ClientUIImageControl.html#ClientUIImageControl.imageColor)
+---@field imageColor ColorValue?
+---Only tweenable on Image Controls.
+---
+---**See:**
+---- [ClientUIImageControl.softEdgeWidthX](https://haminpants.github.io/miliastra-lua-api/class/ClientUIImageControl.html#ClientUIImageControl.softEdgeWidthX)
+---@field softEdgeWidthX number?
+---Only tweenable on Image Controls.
+---
+---**See:**
+---- [ClientUIImageControl.softEdgeWidthY](https://haminpants.github.io/miliastra-lua-api/class/ClientUIImageControl.html#ClientUIImageControl.softEdgeWidthY)
+---@field softEdgeWidthY number?
+---Only tweenable on Image Controls.
+---
+---**See:**
+---- [ClientUIImageControl.horizontalSoftRange](https://haminpants.github.io/miliastra-lua-api/class/ClientUIImageControl.html#ClientUIImageControl.horizontalSoftRange)
+---@field horizontalSoftRange number?
+---Only tweenable on Image Controls.
+---
+---**See:**
+---- [ClientUIImageControl.verticalSoftRange](https://haminpants.github.io/miliastra-lua-api/class/ClientUIImageControl.html#ClientUIImageControl.verticalSoftRange)
+---@field verticalSoftRange number?
+--- # Only tweenable on Image Controls.
+---
+--- **See:**
+---- [ClientUIImageControl.fillAmount](https://haminpants.github.io/miliastra-lua-api/class/ClientUIImageControl.html#ClientUIImageControl.fillAmount)
+---@field fillAmount NormalizedPercentage?
+---Only tweenable on Text Box Controls and Text Window Controls.
+---
+---**See:**
+---- [ClientUITextBoxControl.fontSize](https://haminpants.github.io/miliastra-lua-api/class/ClientUITextBoxControl.html#ClientUITextBoxControl.fontSize)
+---@field fontSize integer?
+---Only tweenable on Text Box Controls and Text Window Controls.
+---- Will not apply in relative Tweens.
+---
+---**See:**
+---- [ClientUITextBoxControl.fontColor](https://haminpants.github.io/miliastra-lua-api/class/ClientUITextBoxControl.html#ClientUITextBoxControl.fontColor)
+---@field fontColor ColorValue?
+---Only tweenable on Text Box Controls and Text Window Controls.
+---- Will not apply in relative Tweens.
+---
+---**See:**
+---- [ClientUITextBoxControl.bgColor](https://haminpants.github.io/miliastra-lua-api/class/ClientUITextBoxControl.html#ClientUITextBoxControl.bgColor)
+---@field bgColor ColorValue?
+---Only tweenable on Text Box Controls and Text Window Controls.
+---- Will not apply in relative Tweens.
+---
+---**See:**
+---- [ClientUITextBoxControl.outlineColor](https://haminpants.github.io/miliastra-lua-api/class/ClientUITextBoxControl.html#ClientUITextBoxControl.outlineColor)
+---@field outlineColor ColorValue?
+---Only tweenable on Text Box Controls and Text Window Controls.
+---
+---**See:**
+---- [ClientUITextBoxControl.minimumFontSize](https://haminpants.github.io/miliastra-lua-api/class/ClientUITextBoxControl.html#ClientUITextBoxControl.minimumFontSize)
+---@field minimumFontSize integer?
+---Only tweenable on Grid Scroller Controls.
+---
+---**See:**
+---- [ClientUIGridScrollerControl.scrollProgress](https://haminpants.github.io/miliastra-lua-api/class/ClientUIGridScrollerControl.html#ClientUIGridScrollerControl.scrollProgress)
+---@field scrollProgress NormalizedPercentage?

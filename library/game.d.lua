@@ -49,7 +49,7 @@ function game.GetControllerLeftStickAxis() end
 ---@return number verticalInput # The vertical axis input strength.
 function game.GetControllerRightStickAxis() end
 
----Returns the cursor position originating from the bottom-left corner of the viewport.
+---Returns the cursor position originating from the bottom-left corner of the canvas.
 ---@return number x # The cursor x position.
 ---@return number y # The cursor y position.
 function game.GetCursorUIPos() end
@@ -93,9 +93,10 @@ function game.GetStageMode() end
 ---@return string localizedText # The localized text.
 function game.GetText(textMappingId) end
 
----Returns the width and height of the viewport.
----@return number width # The width of the viewport.
----@return number height # The height of the viewport.
+---Returns the width and height of the canvas.
+---- The canvas size is typically the viewport width and height, except for controller layouts, which deduct safe area padding.
+---@return number width # The width of the canvas.
+---@return number height # The height of the canvas.
 function game.GetUICanvasSize() end
 
 ---Creates a new Client Control instance.
