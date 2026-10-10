@@ -94,7 +94,7 @@ function game.GetStageMode() end
 function game.GetText(textMappingId) end
 
 ---Returns the width and height of the canvas.
-----
+---- The canvas size is typically the viewport width and height, except for controller layouts, which deduct safe area padding.
 ---@return number width # The width of the canvas.
 ---@return number height # The height of the canvas.
 function game.GetUICanvasSize() end
