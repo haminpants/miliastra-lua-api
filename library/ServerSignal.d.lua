@@ -107,5 +107,6 @@ function ServerSignal:AddVector3(value) end
 function ServerSignal:AddVector3List(values) end
 
 ---Sends the signal.
----- Only Node Graphs will receive the signal, and the Signal Source Entity will always be the Stage Entity.
+---- The Signal Source Entity will always be the Stage Entity.
+---- Client Controls will not receive the signal, only Node Graphs.
 function ServerSignal:SendSignal() end
