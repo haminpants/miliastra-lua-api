@@ -106,7 +106,7 @@ function game.GetUICanvasSize() end
 ---- [ClientUIBaseControl.GetSiblingIndex](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetSiblingIndex) for detailed sibling-index behavior.
 ---@param templateIndex number # The index of the Client Control Template to create.
 ---@param parent ClientControlType # The Client Control which will be the parent of the created Client Control.
----@return ClientControlType # The created Client Control instance.
+---@return ClientControlType control # The created Client Control instance.
 function game.InstantiateClientUIControl(templateIndex, parent) end
 
 ---Checks if the specified audio instance is currently active in memory.
