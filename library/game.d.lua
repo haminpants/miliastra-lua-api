@@ -89,7 +89,7 @@ function game.GetStageMode() end
 ---Returns the localized value of a Script Text Variable by Text Mapping ID.
 ---- If a translation is not provided for the current language, text from the Source Language will be returned.
 ---- Returns the textMappingId if no Script Text Variable with the specified ID is found.
----@param textMappingId string # The ID of the Script Text Variable.
+---@param textMappingId string|ScriptTextVariable # The ID of the Script Text Variable.
 ---@return string localizedText # The localized text.
 function game.GetText(textMappingId) end
 
