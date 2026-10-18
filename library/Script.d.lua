@@ -79,7 +79,7 @@ function Script:RegisterCustomVariableChangedHandler(entity, varName, callback) 
 ---- Only signals sent using the Send Client Scripted Signal server node will be handled, and **all server-sent signals have a minimum latency of approximately 100ms.**
 ---- Callback parameters can only be accessed by sequence index, matching the order in the Server Signal Explorer.
 ---
----To get typed signal parameters, create a class using [LuaLS annotations](https://luals.github.io/wiki/annotations/#class) with the same name as your signal. See below:
+---To get typed signal parameters, use the [MiliLua API Definitions](https://marketplace.visualstudio.com/items?itemName=haminpants.mililua-api-definitions) to automatically extract signal names or create a class using [LuaLS annotations](https://luals.github.io/wiki/annotations/#class) with the same name as your signal. See below:
 ---```lua
 ------@class MySignal
 ------@field [1] string
