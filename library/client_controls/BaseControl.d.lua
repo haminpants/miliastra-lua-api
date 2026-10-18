@@ -6,7 +6,7 @@
 ---@class ClientUIBaseControl
 ---@field alive boolean # [Read] Whether the Client Control is instantiated.
 ---@field id number # [Read] The runtime ID of the Client Control.
----@field prefabIndex number # [Read] The template index of the Client Control.
+---@field prefabIndex integer # [Read] The template index of the Client Control.
 ---@field active boolean # [Read] Whether the Client Control is active. While active, attached scripts will call lifecycle functions.
 ---@field activeInHierarchy boolean # [Read] Whether the Client Control is active, factoring in the active states of its parent hierarchy.
 ---@field visible boolean # [Read] Whether the Client Control is visible.
