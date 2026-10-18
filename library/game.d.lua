@@ -139,7 +139,7 @@ function game.PlayAudio2D(id) end
 function game.PrintClientUITree() end
 
 ---Creates a Server Signal instance for the specified signal name.
----@param signalName string # The name of the signal.
+---@param signalName string|SignalName # The name of the signal.
 ---@return ServerSignal signal # The Server Signal instance.
 function game.ServerSignal(signalName) end
 

@@ -109,5 +109,5 @@ function Script:RegisterServerSignalHandler(signalName, callback) end
 function Script:UnregisterCustomVariableChangedHandler(entity, varName) end
 
 ---Removes the handler for the specified Client Scripted Signal.
----@param signalName string # The name of the signal to unregister the active handler for.
+---@param signalName string|SignalName # The name of the signal to unregister the active handler for.
 function Script:UnregisterServerSignalHandler(signalName) end
