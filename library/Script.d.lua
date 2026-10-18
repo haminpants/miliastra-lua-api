@@ -96,7 +96,7 @@ function Script:RegisterCustomVariableChangedHandler(entity, varName, callback) 
 ---**See:**
 ---- [ServerDataType](https://haminpants.github.io/miliastra-lua-api/alias/ServerDataType.html) for all data types that can be returned in the signalParams table.
 ---@generic T : table
----@param signalName `T` # The name of the signal to register a handler for.
+---@param signalName `T`|SignalName # The name of the signal to register a handler for.
 ---@param callback fun(signalName: string, signalParams: T|table) # The callback to execute whenever the signal is received.
 function Script:RegisterServerSignalHandler(signalName, callback) end
 
