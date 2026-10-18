@@ -5,7 +5,7 @@
 ---The Grid Scroller Control component maintains an internal list of managed Client Controls, which cannot be accessed or modified.
 ---@class ClientUIGridScrollerControl : ClientUIBaseControl
 ---@field itemCount integer # [Read] The number of list items that were created in the most recent refresh.
----@field itemPrefabIndex integer # [Read/Write] The Client Control Template index used to create list items when RefreshItems is called.
+---@field itemPrefabIndex integer|ClientControlTemplateIndex # [Read/Write] The Client Control Template index used to create list items when RefreshItems is called.
 ---@field raycastTarget boolean # [Read/Write] Whether the Grid Scroller can be scrolled by dragging on empty space within its bounding box.
 ---@field showScrollBar boolean # [Read/Write] Whether to show the scrollbar.
 ---@field interactable boolean # [Read/Write] Whether the Grid Scroller can be scrolled by client input.
