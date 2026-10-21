@@ -94,7 +94,7 @@ function ClientUIBaseControl:GetAnchoredPosition() end
 ---Gets a child by name.
 ---- If multiple children with the same name exist, the first by descending sibling index order is returned.
 ---- Returns nil if there are no children with the specified name.
----@param name string # The name used to retrieve a child.
+---@param name string|ClientControlName # The name used to retrieve a child.
 ---@return ClientControlType? child # The first child with the specified name.
 function ClientUIBaseControl:GetChild(name) end
 
