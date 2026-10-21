@@ -15,7 +15,7 @@ function game.DestroyClientUIControl(control) end
 ---
 ---**See:**
 ---- [ClientUIBaseControl.name](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl.name)
----@param name string # The name of the Client Control to find.
+---@param name string|ClientControlName # The name of the Client Control to find.
 ---@return ClientUIContainerControl? control # The root-level ContainerControl with the specified name.
 function game.FindClientUIRoot(name) end
 
