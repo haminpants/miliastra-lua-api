@@ -32,7 +32,7 @@
 local ClientUIBaseControl = {}
 
 ---Registers a key event listener to the Client Control.
----- The callback function must return a boolean which determines whether to mark the event as complete. If marked as complete, subsequent key event listeners of the same event type will be called, even if on a different root-level ContainerControl.
+---- The callback function must return a boolean which determines whether to mark the event as complete. If marked as complete, subsequent key event listeners of the same event type will not be called, even if on a different root-level ContainerControl.
 ---
 ---**See:**
 ---- [Enum.KeyEventType](https://haminpants.github.io/miliastra-lua-api/class/Enum.KeyEventType.html) for all key event types.
