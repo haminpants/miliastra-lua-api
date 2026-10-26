@@ -340,10 +340,6 @@ Enum.ImageType = {}
 Enum.KeyEventType = {}
 
 ---@class Enum.KeyboardKeyCode
----@field CharacterSkill1Key EnumItem.KeyboardKeyCode # Default Keybind: `E`
----@field CharacterSkill2Key EnumItem.KeyboardKeyCode # Default Keybind: `Q`
----@field CharacterSkill3Key EnumItem.KeyboardKeyCode # Default Keybind: `R`
----@field CharacterSkill4Key EnumItem.KeyboardKeyCode # Default Keybind: `T`
 ---@field CraftspersonKey1 EnumItem.KeyboardKeyCode # Default Keybind: `1`
 ---@field CraftspersonKey2 EnumItem.KeyboardKeyCode # Default Keybind: `2`
 ---@field CraftspersonKey3 EnumItem.KeyboardKeyCode # Default Keybind: `3`
@@ -387,17 +383,21 @@ Enum.KeyEventType = {}
 ---@field CraftspersonKey41 EnumItem.KeyboardKeyCode # Default Keybind: `Right Shift`
 ---@field CraftspersonKey42 EnumItem.KeyboardKeyCode # Default Keybind: `Backspace`
 ---@field CraftspersonKey43 EnumItem.KeyboardKeyCode # Default Keybind: `Caps Lock`
----@field DropKey EnumItem.KeyboardKeyCode # Default Keybind: `X`
----@field InteractKey EnumItem.KeyboardKeyCode # Default Keybind: `F`
----@field JumpKey EnumItem.KeyboardKeyCode # Default Keybind: `Space`
 ---@field MoveForwardKey EnumItem.KeyboardKeyCode # Default Keybind: `W`
 ---@field MoveLeftKey EnumItem.KeyboardKeyCode # Default Keybind: `A`
 ---@field MoveBackwardKey EnumItem.KeyboardKeyCode # Default Keybind: `S`
 ---@field MoveRightKey EnumItem.KeyboardKeyCode # Default Keybind: `D`
----@field NormalAttackKey EnumItem.KeyboardKeyCode # Default Keybind: `Left Mouse Button`
----@field OpenShortcutWheelKey EnumItem.KeyboardKeyCode # Default Keybind: `Tab`
----@field SprintKey EnumItem.KeyboardKeyCode # Default Keybind: `Right Mouse Button/Left Shift`
 ---@field SwitchToWalkOrRunKey EnumItem.KeyboardKeyCode # Default Keybind: `Left Ctrl`
+---@field SprintKey EnumItem.KeyboardKeyCode # Default Keybind: `Right Mouse Button/Left Shift`
+---@field JumpKey EnumItem.KeyboardKeyCode # Default Keybind: `Space`
+---@field DropKey EnumItem.KeyboardKeyCode # Default Keybind: `X`
+---@field OpenShortcutWheelKey EnumItem.KeyboardKeyCode # Default Keybind: `Tab`
+---@field InteractKey EnumItem.KeyboardKeyCode # Default Keybind: `F`
+---@field NormalAttackKey EnumItem.KeyboardKeyCode # Default Keybind: `Left Mouse Button`
+---@field CharacterSkill1Key EnumItem.KeyboardKeyCode # Default Keybind: `E`
+---@field CharacterSkill2Key EnumItem.KeyboardKeyCode # Default Keybind: `Q`
+---@field CharacterSkill3Key EnumItem.KeyboardKeyCode # Default Keybind: `R`
+---@field CharacterSkill4Key EnumItem.KeyboardKeyCode # Default Keybind: `T`
 ---@field None EnumItem.KeyboardKeyCode # None
 Enum.KeyboardKeyCode = {}
 
