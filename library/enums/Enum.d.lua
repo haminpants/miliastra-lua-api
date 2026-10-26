@@ -19,16 +19,16 @@ Enum = {}
 ---@field CraftspersonKey12 EnumItem.ControllerKeyCode # Default Keybind: `Left Button + Left Trigger`
 ---@field CraftspersonKey13 EnumItem.ControllerKeyCode # Default Keybind: `Left Button + Right Trigger`
 ---@field CraftspersonKey14 EnumItem.ControllerKeyCode # Default Keybind: `Left Button + Left Stick (Press)`
+---@field SprintKey EnumItem.ControllerKeyCode # Default Keybind: `Right Button`
+---@field JumpKey EnumItem.ControllerKeyCode # Default Keybind: `A`
+---@field InteractKey EnumItem.ControllerKeyCode # Default Keybind: `X`
+---@field NormalAttackKey EnumItem.ControllerKeyCode # Default Keybind: `B`
 ---@field CharacterSkill1Key EnumItem.ControllerKeyCode # Default Keybind: `Right Trigger`
 ---@field CharacterSkill2Key EnumItem.ControllerKeyCode # Default Keybind: `Y`
 ---@field CharacterSkill3Key EnumItem.ControllerKeyCode # Default Keybind: `D-pad Up`
 ---@field CharacterSkill4Key EnumItem.ControllerKeyCode # Default Keybind: `D-pad Down`
----@field InteractKey EnumItem.ControllerKeyCode # Default Keybind: `X`
----@field JumpKey EnumItem.ControllerKeyCode # Default Keybind: `A`
 ---@field MenuConfirmKey EnumItem.ControllerKeyCode # Determined by controller navigation settings
 ---@field MenuBackKey EnumItem.ControllerKeyCode # Determined by controller navigation settings
----@field NormalAttackKey EnumItem.ControllerKeyCode # Default Keybind: `B`
----@field SprintKey EnumItem.ControllerKeyCode # Default Keybind: `Right Button`
 ---@field None EnumItem.ControllerKeyCode # None
 Enum.ControllerKeyCode = {}
 
@@ -173,68 +173,6 @@ Enum.ImageSource = {}
 Enum.ImageType = {}
 
 ---@class Enum.KeyEventType
----@field KeyboardCharacterSkill1KeyUp EnumItem.KeyEventType # Default Keybind: `E`
----@field KeyboardCharacterSkill2KeyUp EnumItem.KeyEventType # Default Keybind: `Q`
----@field KeyboardCharacterSkill3KeyUp EnumItem.KeyEventType # Default Keybind: `R`
----@field KeyboardCharacterSkill4KeyUp EnumItem.KeyEventType # Default Keybind: `T`
----@field KeyboardCraftspersonKey1Up EnumItem.KeyEventType # Default Keybind: `1`
----@field KeyboardCraftspersonKey2Up EnumItem.KeyEventType # Default Keybind: `2`
----@field KeyboardCraftspersonKey3Up EnumItem.KeyEventType # Default Keybind: `3`
----@field KeyboardCraftspersonKey4Up EnumItem.KeyEventType # Default Keybind: `4`
----@field KeyboardCraftspersonKey5Up EnumItem.KeyEventType # Default Keybind: `5`
----@field KeyboardCraftspersonKey6Up EnumItem.KeyEventType # Default Keybind: `6`
----@field KeyboardCraftspersonKey7Up EnumItem.KeyEventType # Default Keybind: `7`
----@field KeyboardCraftspersonKey8Up EnumItem.KeyEventType # Default Keybind: `8`
----@field KeyboardCraftspersonKey9Up EnumItem.KeyEventType # Default Keybind: `9`
----@field KeyboardCraftspersonKey10Up EnumItem.KeyEventType # Default Keybind: `0`
----@field KeyboardCraftspersonKey11Up EnumItem.KeyEventType # Default Keybind: `U`
----@field KeyboardCraftspersonKey12Up EnumItem.KeyEventType # Default Keybind: `Z`
----@field KeyboardCraftspersonKey13Up EnumItem.KeyEventType # Default Keybind: `Y`
----@field KeyboardCraftspersonKey14Up EnumItem.KeyEventType # Default Keybind: `G`
----@field KeyboardCraftspersonKey15Up EnumItem.KeyEventType # Default Keybind: `H`
----@field KeyboardCraftspersonKey16Up EnumItem.KeyEventType # Default Keybind: `I`
----@field KeyboardCraftspersonKey17Up EnumItem.KeyEventType # Default Keybind: `O`
----@field KeyboardCraftspersonKey18Up EnumItem.KeyEventType # Default Keybind: `P`
----@field KeyboardCraftspersonKey19Up EnumItem.KeyEventType # Default Keybind: `J`
----@field KeyboardCraftspersonKey20Up EnumItem.KeyEventType # Default Keybind: `K`
----@field KeyboardCraftspersonKey21Up EnumItem.KeyEventType # Default Keybind: `L`
----@field KeyboardCraftspersonKey22Up EnumItem.KeyEventType # Default Keybind: `V`
----@field KeyboardCraftspersonKey23Up EnumItem.KeyEventType # Default Keybind: `F5`
----@field KeyboardCraftspersonKey24Up EnumItem.KeyEventType # Default Keybind: `F6`
----@field KeyboardCraftspersonKey25Up EnumItem.KeyEventType # Default Keybind: `F7`
----@field KeyboardCraftspersonKey26Up EnumItem.KeyEventType # Default Keybind: `F8`
----@field KeyboardCraftspersonKey27Up EnumItem.KeyEventType # Default Keybind: `F9`
----@field KeyboardCraftspersonKey28Up EnumItem.KeyEventType # Default Keybind: `F10`
----@field KeyboardCraftspersonKey29Up EnumItem.KeyEventType # Default Keybind: `` ` ``
----@field KeyboardCraftspersonKey30Up EnumItem.KeyEventType # Default Keybind: `-`
----@field KeyboardCraftspersonKey31Up EnumItem.KeyEventType # Default Keybind: `=`
----@field KeyboardCraftspersonKey32Up EnumItem.KeyEventType # Default Keybind: `[`
----@field KeyboardCraftspersonKey33Up EnumItem.KeyEventType # Default Keybind: `,`
----@field KeyboardCraftspersonKey34Up EnumItem.KeyEventType # Default Keybind: `.`
----@field KeyboardCraftspersonKey35Up EnumItem.KeyEventType # Default Keybind: `/`
----@field KeyboardCraftspersonKey36Up EnumItem.KeyEventType # Default Keybind: `↑`
----@field KeyboardCraftspersonKey37Up EnumItem.KeyEventType # Default Keybind: `↓`
----@field KeyboardCraftspersonKey38Up EnumItem.KeyEventType # Default Keybind: `←`
----@field KeyboardCraftspersonKey39Up EnumItem.KeyEventType # Default Keybind: `→`
----@field KeyboardCraftspersonKey40Up EnumItem.KeyEventType # Default Keybind: `Right Ctrl`
----@field KeyboardCraftspersonKey41Up EnumItem.KeyEventType # Default Keybind: `Right Shift`
----@field KeyboardCraftspersonKey42Up EnumItem.KeyEventType # Default Keybind: `Backspace`
----@field KeyboardCraftspersonKey43Up EnumItem.KeyEventType # Default Keybind: `Caps Lock`
----@field KeyboardDropKeyUp EnumItem.KeyEventType # Default Keybind: `X`
----@field KeyboardInteractKeyUp EnumItem.KeyEventType # Default Keybind: `F`
----@field KeyboardJumpKeyUp EnumItem.KeyEventType # Default Keybind: `Space`
----@field KeyboardMoveForwardKeyUp EnumItem.KeyEventType # Default Keybind: `W`
----@field KeyboardMoveLeftKeyUp EnumItem.KeyEventType # Default Keybind: `A`
----@field KeyboardMoveBackwardKeyUp EnumItem.KeyEventType # Default Keybind: `S`
----@field KeyboardMoveRightKeyUp EnumItem.KeyEventType # Default Keybind: `D`
----@field KeyboardNormalAttackKeyUp EnumItem.KeyEventType # Default Keybind: `Left Mouse Button`
----@field KeyboardOpenShortcutWheelKeyUp EnumItem.KeyEventType # Default Keybind: `Tab`
----@field KeyboardSprintKeyUp EnumItem.KeyEventType # Default Keybind: `Right Mouse Button/Left Shift`
----@field KeyboardSwitchToWalkOrRunKeyUp EnumItem.KeyEventType # Default Keybind: `Left Ctrl`
----@field KeyboardCharacterSkill1KeyDown EnumItem.KeyEventType # Default Keybind: `E`
----@field KeyboardCharacterSkill2KeyDown EnumItem.KeyEventType # Default Keybind: `Q`
----@field KeyboardCharacterSkill3KeyDown EnumItem.KeyEventType # Default Keybind: `R`
----@field KeyboardCharacterSkill4KeyDown EnumItem.KeyEventType # Default Keybind: `T`
 ---@field KeyboardCraftspersonKey1Down EnumItem.KeyEventType # Default Keybind: `1`
 ---@field KeyboardCraftspersonKey2Down EnumItem.KeyEventType # Default Keybind: `2`
 ---@field KeyboardCraftspersonKey3Down EnumItem.KeyEventType # Default Keybind: `3`
@@ -263,7 +201,7 @@ Enum.ImageType = {}
 ---@field KeyboardCraftspersonKey26Down EnumItem.KeyEventType # Default Keybind: `F8`
 ---@field KeyboardCraftspersonKey27Down EnumItem.KeyEventType # Default Keybind: `F9`
 ---@field KeyboardCraftspersonKey28Down EnumItem.KeyEventType # Default Keybind: `F10`
----@field KeyboardCraftspersonKey29Down EnumItem.KeyEventType # Default Keybind: `` ` ``
+---@field KeyboardCraftspersonKey29Down EnumItem.KeyEventType # Default Keybind: Backtick/Tilde (`~`)
 ---@field KeyboardCraftspersonKey30Down EnumItem.KeyEventType # Default Keybind: `-`
 ---@field KeyboardCraftspersonKey31Down EnumItem.KeyEventType # Default Keybind: `=`
 ---@field KeyboardCraftspersonKey32Down EnumItem.KeyEventType # Default Keybind: `[`
@@ -278,46 +216,80 @@ Enum.ImageType = {}
 ---@field KeyboardCraftspersonKey41Down EnumItem.KeyEventType # Default Keybind: `Right Shift`
 ---@field KeyboardCraftspersonKey42Down EnumItem.KeyEventType # Default Keybind: `Backspace`
 ---@field KeyboardCraftspersonKey43Down EnumItem.KeyEventType # Default Keybind: `Caps Lock`
----@field KeyboardDropKeyDown EnumItem.KeyEventType # Default Keybind: `X`
----@field KeyboardInteractKeyDown EnumItem.KeyEventType # Default Keybind: `F`
----@field KeyboardJumpKeyDown EnumItem.KeyEventType # Default Keybind: `Space`
 ---@field KeyboardMoveForwardKeyDown EnumItem.KeyEventType # Default Keybind: `W`
 ---@field KeyboardMoveLeftKeyDown EnumItem.KeyEventType # Default Keybind: `A`
 ---@field KeyboardMoveBackwardKeyDown EnumItem.KeyEventType # Default Keybind: `S`
 ---@field KeyboardMoveRightKeyDown EnumItem.KeyEventType # Default Keybind: `D`
----@field KeyboardNormalAttackKeyDown EnumItem.KeyEventType # Default Keybind: `Left Mouse Button`
----@field KeyboardOpenShortcutWheelKeyDown EnumItem.KeyEventType # Default Keybind: `Tab`
----@field KeyboardSprintKeyDown EnumItem.KeyEventType # Default Keybind: `Right Mouse Button/Left Shift`
 ---@field KeyboardSwitchToWalkOrRunKeyDown EnumItem.KeyEventType # Default Keybind: `Left Ctrl`
----@field ControllerCharacterSkill1KeyUp EnumItem.KeyEventType # Default Keybind: `Right Trigger`
----@field ControllerCharacterSkill2KeyUp EnumItem.KeyEventType # Default Keybind: `Y`
----@field ControllerCharacterSkill3KeyUp EnumItem.KeyEventType # Default Keybind: `D-pad Up`
----@field ControllerCharacterSkill4KeyUp EnumItem.KeyEventType # Default Keybind: `D-pad Down`
----@field ControllerCraftspersonKey1Up EnumItem.KeyEventType # Default Keybind: `D-pad Up`
----@field ControllerCraftspersonKey2Up EnumItem.KeyEventType # Default Keybind: `D-pad Down`
----@field ControllerCraftspersonKey3Up EnumItem.KeyEventType # Default Keybind: `Left Trigger`
----@field ControllerCraftspersonKey4Up EnumItem.KeyEventType # Default Keybind: `Left Button + Y`
----@field ControllerCraftspersonKey5Up EnumItem.KeyEventType # Default Keybind: `Left Button + X`
----@field ControllerCraftspersonKey6Up EnumItem.KeyEventType # Default Keybind: `Left Button + A`
----@field ControllerCraftspersonKey7Up EnumItem.KeyEventType # Default Keybind: `Left Button + D-pad Up`
----@field ControllerCraftspersonKey8Up EnumItem.KeyEventType # Default Keybind: `Left Button + D-pad Right`
----@field ControllerCraftspersonKey9Up EnumItem.KeyEventType # Default Keybind: `Left Button + D-pad Left`
----@field ControllerCraftspersonKey10Up EnumItem.KeyEventType # Default Keybind: `Left Button + D-pad Down`
----@field ControllerCraftspersonKey11Up EnumItem.KeyEventType # Default Keybind: `Left Button + Right Button`
----@field ControllerCraftspersonKey12Up EnumItem.KeyEventType # Default Keybind: `Left Button + Left Trigger`
----@field ControllerCraftspersonKey13Up EnumItem.KeyEventType # Default Keybind: `Left Button + Right Trigger`
----@field ControllerCraftspersonKey14Up EnumItem.KeyEventType # Default Keybind: `Left Button + Left Stick (Press)`
----@field ControllerInteractKeyUp EnumItem.KeyEventType # Default Keybind: `X`
----@field ControllerJumpKeyUp EnumItem.KeyEventType # Default Keybind: `A`
----@field ControllerMenuBackKeyUp EnumItem.KeyEventType # Determined by controller navigation settings.
----@field ControllerMenuConfirmKeyUp EnumItem.KeyEventType # Determined by controller navigation settings.
----@field ControllerNormalAttackKeyUp EnumItem.KeyEventType # Default Keybind: `B`
----@field ControllerSprintKeyUp EnumItem.KeyEventType # Default Keybind: `Right Button`
----@field ControllerCharacterSkill1KeyDown EnumItem.KeyEventType # Default Keybind: `Right Trigger`
----@field ControllerCharacterSkill2KeyDown EnumItem.KeyEventType # Default Keybind: `Y`
----@field ControllerCharacterSkill3KeyDown EnumItem.KeyEventType # Default Keybind: `D-pad Up`
----@field ControllerCharacterSkill4KeyDown EnumItem.KeyEventType # Default Keybind: `D-pad Down`
----@field ControllerCraftspersonKey1Down EnumItem.KeyEventType # Default Keybind: `D-pad Up`
+---@field KeyboardSprintKeyDown EnumItem.KeyEventType # Default Keybind: `Right Mouse Button/Left Shift`
+---@field KeyboardJumpKeyDown EnumItem.KeyEventType # Default Keybind: `Space`
+---@field KeyboardDropKeyDown EnumItem.KeyEventType # Default Keybind: `X`
+---@field KeyboardOpenShortcutWheelKeyDown EnumItem.KeyEventType # Default Keybind: `Tab`
+---@field KeyboardInteractKeyDown EnumItem.KeyEventType # Default Keybind: `F`
+---@field KeyboardNormalAttackKeyDown EnumItem.KeyEventType # Default Keybind: `Left Mouse Button`
+---@field KeyboardCharacterSkill1KeyDown EnumItem.KeyEventType # Default Keybind: `E`
+---@field KeyboardCharacterSkill2KeyDown EnumItem.KeyEventType # Default Keybind: `Q`
+---@field KeyboardCharacterSkill3KeyDown EnumItem.KeyEventType # Default Keybind: `R`
+---@field KeyboardCharacterSkill4KeyDown EnumItem.KeyEventType # Default Keybind: `T`
+---@field KeyboardCraftspersonKey1Up EnumItem.KeyEventType # Default Keybind: `1`
+---@field KeyboardCraftspersonKey2Up EnumItem.KeyEventType # Default Keybind: `2`
+---@field KeyboardCraftspersonKey3Up EnumItem.KeyEventType # Default Keybind: `3`
+---@field KeyboardCraftspersonKey4Up EnumItem.KeyEventType # Default Keybind: `4`
+---@field KeyboardCraftspersonKey5Up EnumItem.KeyEventType # Default Keybind: `5`
+---@field KeyboardCraftspersonKey6Up EnumItem.KeyEventType # Default Keybind: `6`
+---@field KeyboardCraftspersonKey7Up EnumItem.KeyEventType # Default Keybind: `7`
+---@field KeyboardCraftspersonKey8Up EnumItem.KeyEventType # Default Keybind: `8`
+---@field KeyboardCraftspersonKey9Up EnumItem.KeyEventType # Default Keybind: `9`
+---@field KeyboardCraftspersonKey10Up EnumItem.KeyEventType # Default Keybind: `0`
+---@field KeyboardCraftspersonKey11Up EnumItem.KeyEventType # Default Keybind: `U`
+---@field KeyboardCraftspersonKey12Up EnumItem.KeyEventType # Default Keybind: `Z`
+---@field KeyboardCraftspersonKey13Up EnumItem.KeyEventType # Default Keybind: `Y`
+---@field KeyboardCraftspersonKey14Up EnumItem.KeyEventType # Default Keybind: `G`
+---@field KeyboardCraftspersonKey15Up EnumItem.KeyEventType # Default Keybind: `H`
+---@field KeyboardCraftspersonKey16Up EnumItem.KeyEventType # Default Keybind: `I`
+---@field KeyboardCraftspersonKey17Up EnumItem.KeyEventType # Default Keybind: `O`
+---@field KeyboardCraftspersonKey18Up EnumItem.KeyEventType # Default Keybind: `P`
+---@field KeyboardCraftspersonKey19Up EnumItem.KeyEventType # Default Keybind: `J`
+---@field KeyboardCraftspersonKey20Up EnumItem.KeyEventType # Default Keybind: `K`
+---@field KeyboardCraftspersonKey21Up EnumItem.KeyEventType # Default Keybind: `L`
+---@field KeyboardCraftspersonKey22Up EnumItem.KeyEventType # Default Keybind: `V`
+---@field KeyboardCraftspersonKey23Up EnumItem.KeyEventType # Default Keybind: `F5`
+---@field KeyboardCraftspersonKey24Up EnumItem.KeyEventType # Default Keybind: `F6`
+---@field KeyboardCraftspersonKey25Up EnumItem.KeyEventType # Default Keybind: `F7`
+---@field KeyboardCraftspersonKey26Up EnumItem.KeyEventType # Default Keybind: `F8`
+---@field KeyboardCraftspersonKey27Up EnumItem.KeyEventType # Default Keybind: `F9`
+---@field KeyboardCraftspersonKey28Up EnumItem.KeyEventType # Default Keybind: `F10`
+---@field KeyboardCraftspersonKey29Up EnumItem.KeyEventType # Default Keybind: Backtick/Tilde (`~`)
+---@field KeyboardCraftspersonKey30Up EnumItem.KeyEventType # Default Keybind: `-`
+---@field KeyboardCraftspersonKey31Up EnumItem.KeyEventType # Default Keybind: `=`
+---@field KeyboardCraftspersonKey32Up EnumItem.KeyEventType # Default Keybind: `[`
+---@field KeyboardCraftspersonKey33Up EnumItem.KeyEventType # Default Keybind: `,`
+---@field KeyboardCraftspersonKey34Up EnumItem.KeyEventType # Default Keybind: `.`
+---@field KeyboardCraftspersonKey35Up EnumItem.KeyEventType # Default Keybind: `/`
+---@field KeyboardCraftspersonKey36Up EnumItem.KeyEventType # Default Keybind: `↑`
+---@field KeyboardCraftspersonKey37Up EnumItem.KeyEventType # Default Keybind: `↓`
+---@field KeyboardCraftspersonKey38Up EnumItem.KeyEventType # Default Keybind: `←`
+---@field KeyboardCraftspersonKey39Up EnumItem.KeyEventType # Default Keybind: `→`
+---@field KeyboardCraftspersonKey40Up EnumItem.KeyEventType # Default Keybind: `Right Ctrl`
+---@field KeyboardCraftspersonKey41Up EnumItem.KeyEventType # Default Keybind: `Right Shift`
+---@field KeyboardCraftspersonKey42Up EnumItem.KeyEventType # Default Keybind: `Backspace`
+---@field KeyboardCraftspersonKey43Up EnumItem.KeyEventType # Default Keybind: `Caps Lock`
+---@field KeyboardMoveForwardKeyUp EnumItem.KeyEventType # Default Keybind: `W`
+---@field KeyboardMoveLeftKeyUp EnumItem.KeyEventType # Default Keybind: `A`
+---@field KeyboardMoveBackwardKeyUp EnumItem.KeyEventType # Default Keybind: `S`
+---@field KeyboardMoveRightKeyUp EnumItem.KeyEventType # Default Keybind: `D`
+---@field KeyboardSwitchToWalkOrRunKeyUp EnumItem.KeyEventType # Default Keybind: `Left Ctrl`
+---@field KeyboardSprintKeyUp EnumItem.KeyEventType # Default Keybind: `Right Mouse Button/Left Shift`
+---@field KeyboardJumpKeyUp EnumItem.KeyEventType # Default Keybind: `Space`
+---@field KeyboardDropKeyUp EnumItem.KeyEventType # Default Keybind: `X`
+---@field KeyboardOpenShortcutWheelKeyUp EnumItem.KeyEventType # Default Keybind: `Tab`
+---@field KeyboardInteractKeyUp EnumItem.KeyEventType # Default Keybind: `F`
+---@field KeyboardNormalAttackKeyUp EnumItem.KeyEventType # Default Keybind: `Left Mouse Button`
+---@field KeyboardCharacterSkill1KeyUp EnumItem.KeyEventType # Default Keybind: `E`
+---@field KeyboardCharacterSkill2KeyUp EnumItem.KeyEventType # Default Keybind: `Q`
+---@field KeyboardCharacterSkill3KeyUp EnumItem.KeyEventType # Default Keybind: `R`
+---@field KeyboardCharacterSkill4KeyUp EnumItem.KeyEventType # Default Keybind: `T`
+---@field ControllerCraftspersonKey1Down EnumItem.KeyEventType # Default Keybind: `D-pad Left`
 ---@field ControllerCraftspersonKey2Down EnumItem.KeyEventType # Default Keybind: `D-pad Down`
 ---@field ControllerCraftspersonKey3Down EnumItem.KeyEventType # Default Keybind: `Left Trigger`
 ---@field ControllerCraftspersonKey4Down EnumItem.KeyEventType # Default Keybind: `Left Button + Y`
@@ -331,19 +303,43 @@ Enum.ImageType = {}
 ---@field ControllerCraftspersonKey12Down EnumItem.KeyEventType # Default Keybind: `Left Button + Left Trigger`
 ---@field ControllerCraftspersonKey13Down EnumItem.KeyEventType # Default Keybind: `Left Button + Right Trigger`
 ---@field ControllerCraftspersonKey14Down EnumItem.KeyEventType # Default Keybind: `Left Button + Left Stick (Press)`
----@field ControllerInteractKeyDown EnumItem.KeyEventType # Default Keybind: `X`
----@field ControllerJumpKeyDown EnumItem.KeyEventType # Default Keybind: `A`
----@field ControllerMenuBackKeyDown EnumItem.KeyEventType # Determined by controller navigation settings.
----@field ControllerMenuConfirmKeyDown EnumItem.KeyEventType # Determined by controller navigation settings.
----@field ControllerNormalAttackKeyDown EnumItem.KeyEventType # Default Keybind: `B`
 ---@field ControllerSprintKeyDown EnumItem.KeyEventType # Default Keybind: `Right Button`
+---@field ControllerJumpKeyDown EnumItem.KeyEventType # Default Keybind: `A`
+---@field ControllerInteractKeyDown EnumItem.KeyEventType # Default Keybind: `X`
+---@field ControllerNormalAttackKeyDown EnumItem.KeyEventType # Default Keybind: `B`
+---@field ControllerCharacterSkill1KeyDown EnumItem.KeyEventType # Default Keybind: `Right Trigger`
+---@field ControllerCharacterSkill2KeyDown EnumItem.KeyEventType # Default Keybind: `Y`
+---@field ControllerCharacterSkill3KeyDown EnumItem.KeyEventType # Default Keybind: `D-pad Up`
+---@field ControllerCharacterSkill4KeyDown EnumItem.KeyEventType # Default Keybind: `D-pad Right`
+---@field ControllerMenuConfirmKeyDown EnumItem.KeyEventType # Determined by controller navigation settings.
+---@field ControllerMenuBackKeyDown EnumItem.KeyEventType # Determined by controller navigation settings.
+---@field ControllerCraftspersonKey1Up EnumItem.KeyEventType # Default Keybind: `D-pad Left`
+---@field ControllerCraftspersonKey2Up EnumItem.KeyEventType # Default Keybind: `D-pad Down`
+---@field ControllerCraftspersonKey3Up EnumItem.KeyEventType # Default Keybind: `Left Trigger`
+---@field ControllerCraftspersonKey4Up EnumItem.KeyEventType # Default Keybind: `Left Button + Y`
+---@field ControllerCraftspersonKey5Up EnumItem.KeyEventType # Default Keybind: `Left Button + X`
+---@field ControllerCraftspersonKey6Up EnumItem.KeyEventType # Default Keybind: `Left Button + A`
+---@field ControllerCraftspersonKey7Up EnumItem.KeyEventType # Default Keybind: `Left Button + D-pad Up`
+---@field ControllerCraftspersonKey8Up EnumItem.KeyEventType # Default Keybind: `Left Button + D-pad Right`
+---@field ControllerCraftspersonKey9Up EnumItem.KeyEventType # Default Keybind: `Left Button + D-pad Left`
+---@field ControllerCraftspersonKey10Up EnumItem.KeyEventType # Default Keybind: `Left Button + D-pad Down`
+---@field ControllerCraftspersonKey11Up EnumItem.KeyEventType # Default Keybind: `Left Button + Right Button`
+---@field ControllerCraftspersonKey12Up EnumItem.KeyEventType # Default Keybind: `Left Button + Left Trigger`
+---@field ControllerCraftspersonKey13Up EnumItem.KeyEventType # Default Keybind: `Left Button + Right Trigger`
+---@field ControllerCraftspersonKey14Up EnumItem.KeyEventType # Default Keybind: `Left Button + Left Stick (Press)`
+---@field ControllerSprintKeyUp EnumItem.KeyEventType # Default Keybind: `Right Button`
+---@field ControllerJumpKeyUp EnumItem.KeyEventType # Default Keybind: `A`
+---@field ControllerInteractKeyUp EnumItem.KeyEventType # Default Keybind: `X`
+---@field ControllerNormalAttackKeyUp EnumItem.KeyEventType # Default Keybind: `B`
+---@field ControllerCharacterSkill1KeyUp EnumItem.KeyEventType # Default Keybind: `Right Trigger`
+---@field ControllerCharacterSkill2KeyUp EnumItem.KeyEventType # Default Keybind: `Y`
+---@field ControllerCharacterSkill3KeyUp EnumItem.KeyEventType # Default Keybind: `D-pad Up`
+---@field ControllerCharacterSkill4KeyUp EnumItem.KeyEventType # Default Keybind: `D-pad Right`
+---@field ControllerMenuConfirmKeyUp EnumItem.KeyEventType # Determined by controller navigation settings.
+---@field ControllerMenuBackKeyUp EnumItem.KeyEventType # Determined by controller navigation settings.
 Enum.KeyEventType = {}
 
 ---@class Enum.KeyboardKeyCode
----@field CharacterSkill1Key EnumItem.KeyboardKeyCode # Default Keybind: `E`
----@field CharacterSkill2Key EnumItem.KeyboardKeyCode # Default Keybind: `Q`
----@field CharacterSkill3Key EnumItem.KeyboardKeyCode # Default Keybind: `R`
----@field CharacterSkill4Key EnumItem.KeyboardKeyCode # Default Keybind: `T`
 ---@field CraftspersonKey1 EnumItem.KeyboardKeyCode # Default Keybind: `1`
 ---@field CraftspersonKey2 EnumItem.KeyboardKeyCode # Default Keybind: `2`
 ---@field CraftspersonKey3 EnumItem.KeyboardKeyCode # Default Keybind: `3`
@@ -387,17 +383,21 @@ Enum.KeyEventType = {}
 ---@field CraftspersonKey41 EnumItem.KeyboardKeyCode # Default Keybind: `Right Shift`
 ---@field CraftspersonKey42 EnumItem.KeyboardKeyCode # Default Keybind: `Backspace`
 ---@field CraftspersonKey43 EnumItem.KeyboardKeyCode # Default Keybind: `Caps Lock`
----@field DropKey EnumItem.KeyboardKeyCode # Default Keybind: `X`
----@field InteractKey EnumItem.KeyboardKeyCode # Default Keybind: `F`
----@field JumpKey EnumItem.KeyboardKeyCode # Default Keybind: `Space`
 ---@field MoveForwardKey EnumItem.KeyboardKeyCode # Default Keybind: `W`
 ---@field MoveLeftKey EnumItem.KeyboardKeyCode # Default Keybind: `A`
 ---@field MoveBackwardKey EnumItem.KeyboardKeyCode # Default Keybind: `S`
 ---@field MoveRightKey EnumItem.KeyboardKeyCode # Default Keybind: `D`
----@field NormalAttackKey EnumItem.KeyboardKeyCode # Default Keybind: `Left Mouse Button`
----@field OpenShortcutWheelKey EnumItem.KeyboardKeyCode # Default Keybind: `Tab`
----@field SprintKey EnumItem.KeyboardKeyCode # Default Keybind: `Right Mouse Button/Left Shift`
 ---@field SwitchToWalkOrRunKey EnumItem.KeyboardKeyCode # Default Keybind: `Left Ctrl`
+---@field SprintKey EnumItem.KeyboardKeyCode # Default Keybind: `Right Mouse Button/Left Shift`
+---@field JumpKey EnumItem.KeyboardKeyCode # Default Keybind: `Space`
+---@field DropKey EnumItem.KeyboardKeyCode # Default Keybind: `X`
+---@field OpenShortcutWheelKey EnumItem.KeyboardKeyCode # Default Keybind: `Tab`
+---@field InteractKey EnumItem.KeyboardKeyCode # Default Keybind: `F`
+---@field NormalAttackKey EnumItem.KeyboardKeyCode # Default Keybind: `Left Mouse Button`
+---@field CharacterSkill1Key EnumItem.KeyboardKeyCode # Default Keybind: `E`
+---@field CharacterSkill2Key EnumItem.KeyboardKeyCode # Default Keybind: `Q`
+---@field CharacterSkill3Key EnumItem.KeyboardKeyCode # Default Keybind: `R`
+---@field CharacterSkill4Key EnumItem.KeyboardKeyCode # Default Keybind: `T`
 ---@field None EnumItem.KeyboardKeyCode # None
 Enum.KeyboardKeyCode = {}
 
