@@ -5,7 +5,7 @@
 Enum = {}
 
 ---@class Enum.ControllerKeyCode
----@field CraftspersonKey1 EnumItem.ControllerKeyCode # Default Keybind: `D-pad Up`
+---@field CraftspersonKey1 EnumItem.ControllerKeyCode # Default Keybind: `D-pad Left`
 ---@field CraftspersonKey2 EnumItem.ControllerKeyCode # Default Keybind: `D-pad Down`
 ---@field CraftspersonKey3 EnumItem.ControllerKeyCode # Default Keybind: `Left Trigger`
 ---@field CraftspersonKey4 EnumItem.ControllerKeyCode # Default Keybind: `Left Button + Y`
@@ -26,7 +26,7 @@ Enum = {}
 ---@field CharacterSkill1Key EnumItem.ControllerKeyCode # Default Keybind: `Right Trigger`
 ---@field CharacterSkill2Key EnumItem.ControllerKeyCode # Default Keybind: `Y`
 ---@field CharacterSkill3Key EnumItem.ControllerKeyCode # Default Keybind: `D-pad Up`
----@field CharacterSkill4Key EnumItem.ControllerKeyCode # Default Keybind: `D-pad Down`
+---@field CharacterSkill4Key EnumItem.ControllerKeyCode # Default Keybind: `D-pad Right`
 ---@field MenuConfirmKey EnumItem.ControllerKeyCode # Determined by controller navigation settings
 ---@field MenuBackKey EnumItem.ControllerKeyCode # Determined by controller navigation settings
 ---@field None EnumItem.ControllerKeyCode # None
