@@ -205,7 +205,7 @@ Enum.ImageType = {}
 ---@field KeyboardCraftspersonKey26Up EnumItem.KeyEventType # Default Keybind: `F8`
 ---@field KeyboardCraftspersonKey27Up EnumItem.KeyEventType # Default Keybind: `F9`
 ---@field KeyboardCraftspersonKey28Up EnumItem.KeyEventType # Default Keybind: `F10`
----@field KeyboardCraftspersonKey29Up EnumItem.KeyEventType # Default Keybind: `` ` ``
+---@field KeyboardCraftspersonKey29Up EnumItem.KeyEventType # Default Keybind: Backtick (`` ` ``)
 ---@field KeyboardCraftspersonKey30Up EnumItem.KeyEventType # Default Keybind: `-`
 ---@field KeyboardCraftspersonKey31Up EnumItem.KeyEventType # Default Keybind: `=`
 ---@field KeyboardCraftspersonKey32Up EnumItem.KeyEventType # Default Keybind: `[`
