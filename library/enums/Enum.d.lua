@@ -19,16 +19,16 @@ Enum = {}
 ---@field CraftspersonKey12 EnumItem.ControllerKeyCode # Default Keybind: `Left Button + Left Trigger`
 ---@field CraftspersonKey13 EnumItem.ControllerKeyCode # Default Keybind: `Left Button + Right Trigger`
 ---@field CraftspersonKey14 EnumItem.ControllerKeyCode # Default Keybind: `Left Button + Left Stick (Press)`
+---@field SprintKey EnumItem.ControllerKeyCode # Default Keybind: `Right Button`
+---@field JumpKey EnumItem.ControllerKeyCode # Default Keybind: `A`
+---@field InteractKey EnumItem.ControllerKeyCode # Default Keybind: `X`
+---@field NormalAttackKey EnumItem.ControllerKeyCode # Default Keybind: `B`
 ---@field CharacterSkill1Key EnumItem.ControllerKeyCode # Default Keybind: `Right Trigger`
 ---@field CharacterSkill2Key EnumItem.ControllerKeyCode # Default Keybind: `Y`
 ---@field CharacterSkill3Key EnumItem.ControllerKeyCode # Default Keybind: `D-pad Up`
 ---@field CharacterSkill4Key EnumItem.ControllerKeyCode # Default Keybind: `D-pad Down`
----@field InteractKey EnumItem.ControllerKeyCode # Default Keybind: `X`
----@field JumpKey EnumItem.ControllerKeyCode # Default Keybind: `A`
 ---@field MenuConfirmKey EnumItem.ControllerKeyCode # Determined by controller navigation settings
 ---@field MenuBackKey EnumItem.ControllerKeyCode # Determined by controller navigation settings
----@field NormalAttackKey EnumItem.ControllerKeyCode # Default Keybind: `B`
----@field SprintKey EnumItem.ControllerKeyCode # Default Keybind: `Right Button`
 ---@field None EnumItem.ControllerKeyCode # None
 Enum.ControllerKeyCode = {}
 
