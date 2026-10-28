@@ -26,7 +26,7 @@ function Script:EnableUpdate(enabled) end
 ---
 ---**See:**
 ---- [ServerDataType](https://haminpants.github.io/miliastra-lua-api/alias/ServerDataType.html) for all data types that can be returned.
----@param varName string # The name of the Script Variable.
+---@param varName string|ScriptVariableName # The name of the Script Variable.
 ---@return any value # The value of the Script Variable.
 function Script:GetParam(varName) end
 
