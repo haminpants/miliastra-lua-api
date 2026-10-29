@@ -63,6 +63,7 @@ function game.GetDevice() end
 
 ---Gets a variable set in the Custom Variable component of the specified entity.
 ---- Returns nil if a variable with the specified name is not set in the Custom Variable component on the entity.
+---- Structure-type variables return a table with named fields matching the structure's entry names.
 ---
 ---**See:**
 ---- [Enum.CustomVariableEntityType](https://haminpants.github.io/miliastra-lua-api/class/Enum.CustomVariableEntityType.html) for all entities that Custom Variables can be retrieved from.
