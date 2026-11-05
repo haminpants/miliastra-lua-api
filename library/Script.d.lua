@@ -70,7 +70,7 @@ function Script:Invoke(funcName, ...) end
 ---- [Enum.CustomVariableEntityType](https://haminpants.github.io/miliastra-lua-api/class/Enum.CustomVariableEntityType.html) for all entities that Custom Variables changes can be handled on.
 ---- [game.GetGlobalCustomVariableValue](https://haminpants.github.io/miliastra-lua-api/global/game.html#game.GetGlobalCustomVariableValue)
 ---@param entity EnumItem.CustomVariableEntityType # The entity to handle Custom Variable changes on.
----@param varName string # The name of the Custom Variable.
+---@param varName string|CustomVariableName # The name of the Custom Variable.
 ---@param callback fun(entity: EnumItem.CustomVariableEntityType, varName: string) # The callback to execute whenever the specified Custom Variable changes.
 function Script:RegisterCustomVariableChangedHandler(entity, varName, callback) end
 
@@ -105,7 +105,7 @@ function Script:RegisterServerSignalHandler(signalName, callback) end
 ---**See:**
 ---- [Enum.CustomVariableEntityType](https://haminpants.github.io/miliastra-lua-api/class/Enum.CustomVariableEntityType.html) for all entities that Custom Variable changes can be handled on.
 ---@param entity EnumItem.CustomVariableEntityType # The entity to unregister the handler from.
----@param varName string # The name of the Custom Variable.
+---@param varName string|CustomVariableName # The name of the Custom Variable.
 function Script:UnregisterCustomVariableChangedHandler(entity, varName) end
 
 ---Removes the handler for the specified Client Scripted Signal.
