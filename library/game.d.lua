@@ -69,7 +69,7 @@ function game.GetDevice() end
 ---- [Enum.CustomVariableEntityType](https://haminpants.github.io/miliastra-lua-api/class/Enum.CustomVariableEntityType.html) for all entities that Custom Variables can be retrieved from.
 ---- [ServerDataType](https://haminpants.github.io/miliastra-lua-api/alias/ServerDataType.html) for all data types that can be returned.
 ---@param entity EnumItem.CustomVariableEntityType # The entity to get the Custom Variable from.
----@param varName string # The name of the Custom Variable to get.
+---@param varName string|CustomVariableName # The name of the Custom Variable to get.
 ---@return any value # The value of the Custom Variable.
 function game.GetGlobalCustomVariableValue(entity, varName) end
 
