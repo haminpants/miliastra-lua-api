@@ -4,31 +4,65 @@
 ---
 ---Client Controls are destroyed and recreated whenever the client enters a loading screen, such as when teleporting or reconnecting.
 ---@class ClientUIBaseControl
----@field alive boolean # [Read] Whether the Client Control is instantiated.
----@field id number # [Read] The runtime ID of the Client Control.
----@field prefabIndex integer # [Read] The template index of the Client Control.
----@field active boolean # [Read] Whether the Client Control is active. While active, attached scripts will call lifecycle functions.
----@field activeInHierarchy boolean # [Read] Whether the Client Control is active, factoring in the active states of its parent hierarchy.
----@field visible boolean # [Read] Whether the Client Control is visible.
----@field name string # [Read/Write] The name of the Client Control.
----@field parent ClientControlType? # [Read/Write] The parent of the Client Control. Always nil for root-level ControlContainers.
----@field anchoredPositionX number # [Read/Write/Tweenable] The x position of the Client Control's pivot point relative to its anchor point. See [ClientUIBaseControl.GetAnchoredPosition](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetAnchoredPosition) for detailed behavior.
----@field anchoredPositionY number # [Read/Write/Tweenable] The y position of the Client Control's pivot point relative to its anchor point. See [ClientUIBaseControl.GetAnchoredPosition](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetAnchoredPosition) for detailed behavior.
----@field sizeDeltaX number # [Read/Write/Tweenable] The size offset between the width of the Client Control and its x-axis anchor bounds.
----@field sizeDeltaY number # [Read/Write/Tweenable] The size offset between the height of the Client Control and its y-axis anchor bounds.
----@field anchorMinX NormalizedPercentage # [Read/Write/Tweenable] The minimum x anchor represented as a normalized percentage of the parent's width originating from the bottom-left corner of the parent's bounding box.
----@field anchorMinY NormalizedPercentage # [Read/Write/Tweenable] The minimum y anchor represented as a normalized percentage of the parent's height originating from the bottom-left corner of the parent's bounding box.
----@field anchorMaxX NormalizedPercentage # [Read/Write/Tweenable] The maximum x anchor represented as a normalized percentage of the parent's width originating from the bottom-left corner of the parent's bounding box.
----@field anchorMaxY NormalizedPercentage # [Read/Write/Tweenable] The maximum y anchor represented as a normalized percentage of the parent's height originating from the bottom-left corner of the parent's bounding box.
----@field pivotX DecimalPercentage # [Read/Write/Tweenable] The x position of the pivot point represented as a decimal percentage of the Client Control's width originating from the bottom-left corner of its bounding box.
----@field pivotY DecimalPercentage # [Read/Write/Tweenable] The y position of the pivot point represented as a decimal percentage of the Client Control's height originating from the bottom-left corner of its bounding box.
----@field localScaleX number # [Read/Write/Tweenable] The local x scale of the Client Control.
----@field localScaleY number # [Read/Write/Tweenable] The local y scale of the Client Control.
----@field localScaleZ number # [Read/Write/Tweenable] The local z scale of the Client Control.
----@field localRotationX number # [Read/Write/Tweenable] The local x rotation of the Client Control.
----@field localRotationY number # [Read/Write/Tweenable] The local y rotation of the Client Control.
----@field localRotationZ number # [Read/Write/Tweenable] The local z rotation of the Client Control.
----@field canControllerFocus boolean # [Read/Write] Whether the Client Control can be focused by controller navigation.
+---(Read) Whether the Client Control is instantiated.
+---@field alive boolean
+---(Read) The runtime ID of the Client Control.
+---@field id number
+---(Read) The template index of the Client Control.
+---@field prefabIndex integer
+---(Read) Whether the Client Control is active.
+---- While active, attached scripts will call lifecycle functions.
+---@field active boolean
+---(Read) Whether the Client Control is active, factoring in the active states of its parent hierarchy.
+---- While active, attached scripts will call lifecycle functions.
+---@field activeInHierarchy boolean
+---(Read) Whether the Client Control is visible.
+---@field visible boolean
+---(Read/Write) The name of the Client Control.
+---@field name string
+---(Read/Write) The parent of the Client Control.
+---- Always nil for root-level ControlContainers.
+---@field parent ClientControlType?
+---(Read/Write/Tweenable) The x position of the Client Control's pivot point relative to its anchor point.
+---
+---**See:**
+---- [ClientUIBaseControl.GetAnchoredPosition](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetAnchoredPosition) for detailed behavior.
+---@field anchoredPositionX number
+---(Read/Write/Tweenable) The y position of the Client Control's pivot point relative to its anchor point.
+---
+---**See:**
+---- [ClientUIBaseControl.GetAnchoredPosition](https://haminpants.github.io/miliastra-lua-api/class/ClientUIBaseControl.html#ClientUIBaseControl:GetAnchoredPosition) for detailed behavior.
+---@field anchoredPositionY number
+---(Read/Write/Tweenable) The size offset between the width of the Client Control and its x-axis anchor bounds.
+---@field sizeDeltaX number
+---(Read/Write/Tweenable) The size offset between the height of the Client Control and its y-axis anchor bounds.
+---@field sizeDeltaY number
+---(Read/Write/Tweenable) The minimum x anchor represented as a normalized percentage of the parent's width originating from the bottom-left corner of the parent's bounding box.
+---@field anchorMinX NormalizedPercentage
+---(Read/Write/Tweenable) The minimum y anchor represented as a normalized percentage of the parent's height originating from the bottom-left corner of the parent's bounding box.
+---@field anchorMinY NormalizedPercentage
+---(Read/Write/Tweenable) The maximum x anchor represented as a normalized percentage of the parent's width originating from the bottom-left corner of the parent's bounding box.
+---@field anchorMaxX NormalizedPercentage
+---(Read/Write/Tweenable) The maximum y anchor represented as a normalized percentage of the parent's height originating from the bottom-left corner of the parent's bounding box.
+---@field anchorMaxY NormalizedPercentage
+---(Read/Write/Tweenable) The x position of the pivot point represented as a decimal percentage of the Client Control's width originating from the bottom-left corner of its bounding box.
+---@field pivotX DecimalPercentage
+---(Read/Write/Tweenable) The y position of the pivot point represented as a decimal percentage of the Client Control's height originating from the bottom-left corner of its bounding box.
+---@field pivotY DecimalPercentage
+---(Read/Write/Tweenable) The local x scale of the Client Control.
+---@field localScaleX number
+---(Read/Write/Tweenable) The local y scale of the Client Control.
+---@field localScaleY number
+---(Read/Write/Tweenable) The local z scale of the Client Control.
+---@field localScaleZ number
+---(Read/Write/Tweenable) The local x rotation of the Client Control.
+---@field localRotationX number
+---(Read/Write/Tweenable) The local y rotation of the Client Control.
+---@field localRotationY number
+---(Read/Write/Tweenable) The local z rotation of the Client Control.
+---@field localRotationZ number
+---(Read/Write) Whether the Client Control can be focused by controller navigation.
+---@field canControllerFocus boolean
 local ClientUIBaseControl = {}
 
 ---Registers a key event listener to the Client Control.

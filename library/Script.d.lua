@@ -5,12 +5,22 @@ script = script
 
 ---The type that represents an instance of a script that is attached to a Client Control, set as the Global Script, or running as a Module.
 ---@class Script
----@field alive boolean # [Read] Whether the script instance is currently loaded. Check this field before calling user-defined global functions from a different script.
----@field id number # [Read] The runtime ID of the script instance.
----@field prefabIndex number? # [Read] The mapping ID of the script. Always nil for Modules.
----@field object ClientControlType? # [Read] The Client Control that the script is attached to. Always nil for the Global Script and Modules.
----@field path string # [Read] The path of the script relative to the `external_lua_file` directory, without the file extension.
----@field enabled boolean # [Read/Write] The active execution state of the script. **Not observed to have any effect on lifecycle functions or event handlers when changed directly.**
+---(Read) Whether the script instance is currently loaded.
+---- Check this field before calling user-defined global functions from a different script.
+---@field alive boolean
+---(Read) The runtime ID of the script instance.
+---@field id number
+---(Read) The mapping ID of the script.
+---- Always nil for Modules.
+---@field prefabIndex number?
+---(Read) The Client Control that the script is attached to.
+---- Always nil for the Global Script and Modules.
+---@field object ClientControlType?
+---(Read) The path of the script relative to the `external_lua_file` directory, without the file extension.
+---@field path string
+---(Read/Write) The active execution state of the script.
+---- **Not observed to have any effect on lifecycle functions or event handlers when changed directly.**
+---@field enabled boolean
 local Script = {}
 
 ---Sets whether the script executes OnUpdate and OnLevelUpdate lifecycle functions.

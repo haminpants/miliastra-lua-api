@@ -2,7 +2,8 @@
 
 ---The type that represents an instance of a CursorEventArea component. Contains functions for managing cursor event listeners.
 ---@class ClientUICursorEventAreaControl : ClientUIBaseControl
----@field raycastTarget boolean # [Read/Write] Whether the Cursor Event Area can receive cursor interaction events.
+---(Read/Write) Whether the Cursor Event Area can receive cursor interaction events.
+---@field raycastTarget boolean
 local ClientUICursorEventAreaControl = {}
 
 ---Registers a cursor event listener to the Client Control.

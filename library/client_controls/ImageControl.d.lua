@@ -2,24 +2,42 @@
 
 ---The type that represents an instance of an Image Control component. Contains functions for manipulating the image source and fill type.
 ---@class ClientUIImageControl : ClientUIBaseControl
----@field imageSource EnumItem.ImageSource # [Read] The image source type.
----@field imageId integer # [Read] The image asset ID.
----@field imageColor ColorValue # [Read/Write/Tweenable] The color of the image.
----@field imageType EnumItem.ImageType # [Read/Write] The image type.
----@field enableMask boolean # [Read/Write] Whether masking is enabled.
----@field enableSoftEdge boolean # [Read/Write] Whether soft edge is enabled.
----@field softEdgeMode EnumItem.ImageMaskSoftEdgeMode # [Read/Write] The soft edge mode.
----@field softEdgeWidthX number # [Read/Write/Tweenable] The horizontal soft edge width.
----@field softEdgeWidthY number # [Read/Write/Tweenable] The vertical soft edge width.
----@field horizontalSoftRange number # [Read/Write/Tweenable] The horizontal soft edge range.
----@field verticalSoftRange number # [Read/Write/Tweenable] The vertical soft edge range.
----@field reverseMaskArea boolean # [Read/Write] Whether to invert the mask area.
----@field fillType EnumItem.ImageFillType # [Read/Write] The fill type of the image.
----@field fillHorizontalType EnumItem.ImageFillHorizontalType # [Read/Write] The fill direction when the fill type is Horizontal.
----@field fillVerticalType EnumItem.ImageFillVerticalType # [Read/Write] The fill direction when the fill type is Vertical.
----@field fillRadial90Type EnumItem.ImageFillRadial90Type # [Read/Write] The fill origin used when the fill type is Radial90.
----@field fillRadialType EnumItem.ImageFillRadialType # [Read/Write] The fill origin used when the fill type is Radial180 or Radial360.
----@field fillAmount NormalizedPercentage # [Read/Write/Tweenable] The normalized percentage of the image that should be revealed.
+---(Read) The image source type.
+---@field imageSource EnumItem.ImageSource
+---(Read) The image asset ID.
+---@field imageId integer
+---(Read/Write/Tweenable) The color of the image.
+---@field imageColor ColorValue
+---(Read/Write) The image type.
+---@field imageType EnumItem.ImageType
+---(Read/Write) Whether masking is enabled.
+---@field enableMask boolean
+---(Read/Write) Whether soft edge is enabled.
+---@field enableSoftEdge boolean
+---(Read/Write) The soft edge mode.
+---@field softEdgeMode EnumItem.ImageMaskSoftEdgeMode
+---(Read/Write/Tweenable) The horizontal soft edge width.
+---@field softEdgeWidthX number
+---(Read/Write/Tweenable) The vertical soft edge width.
+---@field softEdgeWidthY number
+---(Read/Write/Tweenable) The horizontal soft edge range.
+---@field horizontalSoftRange number
+---(Read/Write/Tweenable) The vertical soft edge range.
+---@field verticalSoftRange number
+---(Read/Write) Whether to invert the mask area.
+---@field reverseMaskArea boolean
+---(Read/Write) The fill type of the image.
+---@field fillType EnumItem.ImageFillType
+---(Read/Write) The fill direction when the fill type is Horizontal.
+---@field fillHorizontalType EnumItem.ImageFillHorizontalType
+---(Read/Write) The fill direction when the fill type is Vertical.
+---@field fillVerticalType EnumItem.ImageFillVerticalType
+---(Read/Write) The fill origin used when the fill type is Radial90.
+---@field fillRadial90Type EnumItem.ImageFillRadial90Type
+---(Read/Write) The fill origin used when the fill type is Radial180 or Radial360.
+---@field fillRadialType EnumItem.ImageFillRadialType
+---(Read/Write/Tweenable) The normalized percentage of the image that should be revealed.
+---@field fillAmount NormalizedPercentage
 local ClientUIImageControl = {}
 
 ---Sets the image source and ID.

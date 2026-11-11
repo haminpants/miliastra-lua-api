@@ -2,9 +2,12 @@
 
 ---The type that each enum value maps to, containing fields that describe the specified enum.
 ---@class EnumItem
----@field Name string # [Read] The name of the enum (e.g., InQuad for Enum.EaseType.InQuad).
----@field FullName string # [Read] The fully qualified name of the enum (e.g., Enum.EaseType.InQuad).
----@field EnumType string # [Read] The name of the enum type (e.g., EaseType for Enum.EaseType.InQuad).
+---(Read) The name of the enum (e.g., InQuad for Enum.EaseType.InQuad).
+---@field Name string
+---(Read) The fully qualified name of the enum (e.g., Enum.EaseType.InQuad).
+---@field FullName string
+---(Read) The name of the enum type (e.g., EaseType for Enum.EaseType.InQuad).
+---@field EnumType string
 
 ---Represents an enum value from [Enum.ControllerKeyCode](https://haminpants.github.io/miliastra-lua-api/class/Enum.ControllerKeyCode.html).
 ---@class EnumItem.ControllerKeyCode : EnumItem

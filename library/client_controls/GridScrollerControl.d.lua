@@ -4,15 +4,26 @@
 ---
 ---The Grid Scroller Control component maintains an internal list of managed Client Controls, which cannot be accessed or modified.
 ---@class ClientUIGridScrollerControl : ClientUIBaseControl
----@field itemCount integer # [Read] The number of list items that were created in the most recent refresh.
----@field itemPrefabIndex integer|ClientControlTemplateIndex # [Read/Write] The Client Control Template index used to create list items when RefreshItems is called.
----@field raycastTarget boolean # [Read/Write] Whether the Grid Scroller can be scrolled by dragging on empty space within its bounding box.
----@field showScrollBar boolean # [Read/Write] Whether to show the scrollbar.
----@field interactable boolean # [Read/Write] Whether the Grid Scroller can be scrolled by client input.
----@field scrollDirection EnumItem.ScrollDirection # [Read] The scroll direction.
----@field layoutConstraint EnumItem.ScrollLayoutConstraint # [Read] The list item layout constraint.
----@field layoutConstraintFixedCount number # [Read] The maximum list item count along the scroll direction. Always 0 when the layout constraint is set to Auto Wrap.
----@field scrollProgress NormalizedPercentage # [Read/Write/Tweenable] The normalized percentage representing the scroll position originating from the bottom-left corner. Values outside the range 0.0-1.0 may be returned during overscroll.
+---(Read) The number of list items that were created in the most recent refresh.
+---@field itemCount integer
+---(Read/Write) The Client Control Template index used to create list items when RefreshItems is called.
+---@field itemPrefabIndex integer|ClientControlTemplateIndex
+---(Read/Write) Whether the Grid Scroller can be scrolled by dragging on empty space within its bounding box.
+---@field raycastTarget boolean
+---(Read/Write) Whether to show the scrollbar.
+---@field showScrollBar boolean
+---(Read/Write) Whether the Grid Scroller can be scrolled by client input.
+---@field interactable boolean
+---(Read) The scroll direction.
+---@field scrollDirection EnumItem.ScrollDirection
+---(Read) The list item layout constraint.
+---@field layoutConstraint EnumItem.ScrollLayoutConstraint
+---(Read) The maximum list item count along the scroll direction.
+---- Always 0 when the layout constraint is set to Auto Wrap.
+---@field layoutConstraintFixedCount number
+---(Read/Write/Tweenable) The normalized percentage representing the scroll position originating from the bottom-left corner.
+---- Values outside the range 0.0-1.0 may be returned during overscroll.
+---@field scrollProgress NormalizedPercentage
 local ClientUIGridScrollerControl = {}
 
 ---Destroys all existing list item Client Controls, then instantiates the specified number of Client Controls as list items and invokes a callback for each item.
