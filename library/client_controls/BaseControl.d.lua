@@ -155,13 +155,13 @@ function ClientUIBaseControl:GetPivot() end
 
 ---Gets the instance of a script attached to the Client Control by Script Mapping ID.
 ---- Returns nil if the script with the specified Script Mapping ID is not attached to the Client Control.
----@param scriptPrefabIndex number # The Script Mapping ID used to retrieve a script instance.
+---@param scriptPrefabIndex number|ScriptMappingId # The Script Mapping ID used to retrieve a script instance.
 ---@return Script? script # The script instance with the specified Script Mapping ID.
 function ClientUIBaseControl:GetScript(scriptPrefabIndex) end
 
 ---Gets the instance of a script attached to the Client Control by file path, relative to the `external_lua_file` folder.
 ---- Returns nil if the script with the specified file path is not attached to the Client Control.
----@param path string # The file path of the script, excluding the file extension.
+---@param path string|ScriptReferencePath # The file path of the script, excluding the file extension.
 ---@return Script? script # The script instance with the specified path.
 function ClientUIBaseControl:GetScriptByPath(path) end
 
