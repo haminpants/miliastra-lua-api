@@ -2,11 +2,13 @@
 
 ---The type that represents an instance of a Preset Button component. Contains functions for managing cursor event listeners.
 ---@class ClientUIPresetButtonControl : ClientUIBaseControl
----(Read/Write) Whether the Preset Button responds to user input and triggers events.
----@field interactable boolean
 ---(Read/Write) The ID of the sound effect to play when the button is clicked.
 ---@field clickAudioId integer
----(Read/Write) Whether the Preset Button can receive cursor interaction events.
+---(Read/Write) Whether the Preset Button updates its display status node and plays the specified click sound effect when interacted by cursor or touch input.
+---- The "Unavailable" status node is used when interactable is false.
+---- Display status node updates and the click sound effect will only occur if raycastTarget is also true.
+---@field interactable boolean
+---(Read/Write) Whether the Preset Button detects cursor and touch input events.
 ---@field raycastTarget boolean
 local ClientUIPresetButtonControl = {}
 
